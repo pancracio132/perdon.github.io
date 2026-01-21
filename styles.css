@@ -1,29 +1,60 @@
+
+
 * {
-animation: pulse 1.5s infinite;
+box-sizing: border-box;
+font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+
+body {
+margin: 0;
+min-height: 100vh;
+background: linear-gradient(180deg, #f6f7fb, #eceff5);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.card {
+background: #ffffff;
+max-width: 650px;
+width: 92%;
+padding: 2.2rem 2rem;
+border-radius: 18px;
+box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+text-align: left;
+}
+
+
+h1 {
+margin: 0 0 0.8rem 0;
+font-size: 2rem;
+color: #c94a6a;
+text-align: center;
+}
+
+
+.heart {
+font-size: 2.5rem;
+text-align: center;
+margin-bottom: 1.2rem;
+}
+
+
+p {
+color: #444;
+line-height: 1.75;
+font-size: 1.02rem;
+margin-bottom: 1.2rem;
 }
 
 
 .firma {
 margin-top: 2rem;
-font-weight: bold;
+padding-top: 1rem;
+border-top: 1px solid #eee;
+font-weight: 600;
 color: #333;
-}
-
-
-@keyframes fadeIn {
-from {
-opacity: 0;
-transform: translateY(20px);
-}
-to {
-opacity: 1;
-transform: translateY(0);
-}
-}
-
-
-@keyframes pulse {
-0% { transform: scale(1); }
-50% { transform: scale(1.15); }
-100% { transform: scale(1); }
+text-align: right;
 }
